@@ -1,5 +1,5 @@
 # Mensaje de bienvenida.
-print("\033[1m"+f"\nBienvenid@ al programa."+"\033[0m")
+print("\033[1m"+"\nBienvenid@ al programa."+"\033[0m")
 
 # Variables que se usaran en el programa:
 
@@ -23,11 +23,11 @@ while num_datos <= 0:
         if num_datos > 0:
             break
         
-        print("\033[1m"+f"\nNo es posible ingresar la cantidad de datos escrita, por favor vuelva a intentarlo."+"\033[0m")
+        print("\033[1m"+"\nNo es posible ingresar la cantidad de datos escrita, por favor vuelva a intentarlo."+"\033[0m")
 
     # Mensaje que le indique al usuario que ha ingresado un dato invaido
     except ValueError:
-        print("\033[1m"+f"\nUsted ingresó un valor que no es un número entero. Por favor ingrese un valor valido."+"\033[0m")
+        print("\033[1m"+"\nUsted ingresó un valor que no es un número entero. Por favor ingrese un valor valido."+"\033[0m")
 
 # Bucle para que el usuario ingrese los datos.
 for i in range(num_datos):
@@ -56,7 +56,7 @@ for i in range(num_datos):
         
         # Mensaje que le indique al usuario que ha ingresado un dato invaido
         except ValueError:
-            print("\033[1m"+f"\nEl último dato ingresado es invalido. Por favor ingrese un valor valido."+"\033[0m")
+            print("\033[1m"+"\nEl último dato ingresado es invalido. Por favor ingrese un valor valido."+"\033[0m")
         
 # Mensajes que muesten la cantidad de numeros positivos, negativos y nulos escritos.
 print(f"\nLa cantidad de números positivos ingresados es: {positivos}.")
